@@ -14,6 +14,9 @@ function App() {
     const mainBox = document.getElementById('main-box')
     mainBox.style.borderStyle = value
   }
+  function updateBorderColor(value) {}
+  function updateBorderSize(value) {}
+  function updateBorderRadius(value) {}
 
   return (
     <div className="App">
