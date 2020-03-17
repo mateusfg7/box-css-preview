@@ -10,6 +10,11 @@ function App() {
     radius: '0px',
   })
 
+  function updateBorderStyle(value) {
+    const mainBox = document.getElementById('main-box')
+    mainBox.style.borderStyle = value
+  }
+
   return (
     <div className="App">
       <div id="main-box"></div>
@@ -17,6 +22,7 @@ function App() {
       <span className="costumize-area">
         Style <input name="style" type="text" value={state.style} onChange={(event)=>{
           setState({ style: event.target.value })
+          updateBorderStyle(event.target.value)
         }}/>
       </span>
       <br/>
