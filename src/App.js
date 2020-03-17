@@ -15,7 +15,7 @@ function App() {
       <div id="main-box"></div>
 
       <span class="costumize-area">
-        Style <input name="style" type="text"/>
+        Style <input name="style" type="text" value={state.style}/>
       </span>
       <br/>
       <span class="costumize-area">
