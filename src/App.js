@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <div id="main-box"></div>
 
-      <span class="costumize-area">
+      <span className="costumize-area">
         Style <input name="style" type="text" value={state.style} onChange={(event)=>{
           setState({ style: event.target.value })
           log() // LOG
