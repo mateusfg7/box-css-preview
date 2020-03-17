@@ -7,7 +7,7 @@ function App() {
     style: '',
     color: '',
     size: '0px',
-    radius: '0px',
+    radius: '0',
   })
 
   function updateBorderStyle(value) {
@@ -53,9 +53,10 @@ function App() {
       </span>
       <br/>
       <span className="costumize-area">
-        Radius <input name="radius" type="number" onChange={(event)=>{
-          setState({ radius: event.target.value + 'px' })
+        Radius <input name="radius" type="range" value={state.radius} step="1" min="0" max="52" onChange={(event)=>{
+          setState({ radius: event.target.value })
           updateBorderRadius(event.target.value)
+          console.log(event.target.value)
         }}/>
       </span>
       <br/>
