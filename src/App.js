@@ -18,7 +18,10 @@ function App() {
     const mainBox = document.getElementById('main-box')
     mainBox.style.borderColor = value
   }
-  function updateBorderSize(value) {}
+  function updateBorderSize(value) {
+    const mainBox = document.getElementById('main-box')
+    mainBox.style.borderWidth = value + 'px'
+  }
   function updateBorderRadius(value) {}
 
   return (
@@ -41,7 +44,7 @@ function App() {
       <br/>
       <span className="costumize-area">
         Size <input name="size" type="number" onChange={(event)=>{
-          setState({ size: event.target.value })
+          setState({ size: event.target.value + 'px' })
           updateBorderSize(event.target.value)
         }}/>
       </span>
