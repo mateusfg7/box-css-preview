@@ -56,7 +56,6 @@ function App() {
         Radius <input name="radius" type="range" value={state.radius} step="1" min="0" max="150" onChange={(event)=>{
           setState({ radius: event.target.value })
           updateBorderRadius(event.target.value)
-          console.log(event.target.value)
         }}/>
       </div>
       <br/>
