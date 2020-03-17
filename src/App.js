@@ -32,18 +32,21 @@ function App() {
       <span className="costumize-area">
         Color <input name="color" type="color" onChange={(event)=>{
           setState({ color: event.target.value })
+          updateBorderColor(event.target.value)
         }}/>
       </span>
       <br/>
       <span className="costumize-area">
         Size <input name="size" type="number" onChange={(event)=>{
           setState({ size: event.target.value })
+          updateBorderSize(event.target.value)
         }}/>
       </span>
       <br/>
       <span className="costumize-area">
         Radius <input name="radius" type="number" onChange={(event)=>{
           setState({ radius: event.target.value })
+          updateBorderRadius(event.target.value)
         }}/>
       </span>
       <br/>
