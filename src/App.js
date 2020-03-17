@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const [state, setState] = useState({
+    style: '',
+    color: '',
+    size: '0px',
+    radius: '0px',
+  })
+
   return (
     <div className="App">
       <div id="main-box"></div>
