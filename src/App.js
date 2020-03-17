@@ -27,21 +27,21 @@ function App() {
         }}/>
       </span>
       <br/>
-      <span class="costumize-area">
+      <span className="costumize-area">
         Color <input name="color" type="color" onChange={(event)=>{
           setState({ color: event.target.value })
           log() // LOG
         }}/>
       </span>
       <br/>
-      <span class="costumize-area">
+      <span className="costumize-area">
         Size <input name="size" type="number" onChange={(event)=>{
           setState({ size: event.target.value })
           log() // LOG
         }}/>
       </span>
       <br/>
-      <span class="costumize-area">
+      <span className="costumize-area">
         Radius <input name="radius" type="number" onChange={(event)=>{
           setState({ radius: event.target.value })
           log() // LOG
