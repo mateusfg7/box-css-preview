@@ -8,11 +8,27 @@ body {
 
 .App {
   text-align: center;
+  align-items: center;
+  /* border: solid 1px rgb(255, 0, 0); */
+  padding: 10px;
 }
 
 #main-box {
   height: 100px;
   width: 100px;
+  margin: auto auto 20px auto;
   border: 2px solid #000;
-  background: rgba(0, 0, 0, 0.452);
+  background: rgba(0, 0, 0, 0.281);
+}
+
+.costumize-area {
+  margin: -5px;
+  /* border: solid 1px rgb(255, 0, 0); */
+}
+
+input {
+  max-width: 100px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
 }

@@ -31,33 +31,33 @@ function App() {
     <div className="App">
       <div id="main-box"></div>
 
-      <span className="costumize-area">
+      <div className="costumize-area">
         Style <input name="style" type="text" value={state.style} onChange={(event)=>{
           setState({ style: event.target.value })
           updateBorderStyle(event.target.value)
         }}/>
-      </span>
+      </div>
       <br/>
-      <span className="costumize-area">
+      <div className="costumize-area">
         Color <input name="color" type="color" onChange={(event)=>{
           setState({ color: event.target.value })
           updateBorderColor(event.target.value)
         }}/>
-      </span>
+      </div>
       <br/>
-      <span className="costumize-area">
+      <div className="costumize-area">
         Size <input name="size" type="number" onChange={(event)=>{
           setState({ size: event.target.value + 'px' })
           updateBorderSize(event.target.value)
         }}/>
-      </span>
+      </div>
       <br/>
-      <span className="costumize-area">
+      <div className="costumize-area">
         Radius <input name="radius" type="range" value={state.radius} step="1" min="0" max="52" onChange={(event)=>{
           setState({ radius: event.target.value })
           updateBorderRadius(event.target.value)
         }}/>
-      </span>
+      </div>
       <br/>
 
     </div>
