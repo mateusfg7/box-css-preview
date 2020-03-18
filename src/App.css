@@ -25,6 +25,9 @@ body {
   margin: -5px;
   /* border: solid 1px rgb(255, 0, 0); */
 }
+span {
+  color: rgba(0, 0, 0, 0.438);
+}
 
 #area {
   display: flex;
