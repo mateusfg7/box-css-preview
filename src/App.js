@@ -169,7 +169,7 @@ function App() {
       
       </div>
       
-
+      <h3>CSS</h3>
       <textarea id="text-to-copy" type="text" value={`
 border-style: ${stateTop.style} ${stateRight.style} ${stateButtom.style} ${stateLeft.style};
 border-color: ${stateTop.color} ${stateRight.color} ${stateButtom.color} ${stateLeft.color};
