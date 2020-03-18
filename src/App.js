@@ -8,10 +8,28 @@ import updateBorderRadius from './functions/updateBorderRadius'
 
 function App() {
 
-  const [state, setState] = useState({
+  const [stateTop, setStateTop] = useState({
     style: 'solid',
     color: '#000',
-    size: '0px',
+    size: '2px',
+    radius: '0',
+  })
+  const [stateRight, setStateRight] = useState({
+    style: 'solid',
+    color: '#000',
+    size: '2px',
+    radius: '0',
+  })
+  const [stateButtom, setStateButtom] = useState({
+    style: 'solid',
+    color: '#000',
+    size: '2px',
+    radius: '0',
+  })
+  const [stateLeft, setStateLeft] = useState({
+    style: 'solid',
+    color: '#000',
+    size: '2px',
     radius: '0',
   })
 
@@ -19,40 +37,145 @@ function App() {
   return (
     <div className="App">
       <div id="main-box"></div>
+      
+      
       <div id="area">
+        
+
         <div className="custumize-section">
+          <p>Top</p>
           <div className="costumize-area">
-            Style <input name="style" type="text" value={state.style} onChange={(event)=>{
-              setState({ ...state, style: event.target.value })
-              updateBorderStyle(document.getElementById('main-box'), event.target.value)
+            Style <input name="style" type="text" value={stateTop.style} onChange={(event)=>{
+              setStateTop({ ...stateTop, style: event.target.value })
+              updateBorderStyle(document.getElementById('main-box'), event.target.value, 'top')
             }}/>
           </div>
           <br/>
           <div className="costumize-area">
             Color <input name="color" type="color" onChange={(event)=>{
-              setState({ ...state, color: event.target.value })
-              updateBorderColor(document.getElementById('main-box'), event.target.value)
+              setStateTop({ ...stateTop, color: event.target.value })
+              updateBorderColor(document.getElementById('main-box'), event.target.value, 'top')
             }}/>
           </div>
           <br/>
           <div className="costumize-area">
             Size <input name="size" type="number" onChange={(event)=>{
-              setState({ ...state, size: event.target.value + 'px' })
-              updateBorderSize(document.getElementById('main-box'), event.target.value)
+              setStateTop({ ...stateTop, size: event.target.value + 'px' })
+              updateBorderSize(document.getElementById('main-box'), event.target.value, 'top')
             }}/>
           </div>
           <br/>
           <div className="costumize-area">
-            Radius <input name="radius" type="range" value={state.radius} step="1" min="0" max="150" onChange={(event)=>{
-              setState({ ...state, radius: event.target.value })
-              updateBorderRadius(document.getElementById('main-box'), event.target.value)
+            Radius <input name="radius" type="range" value={stateTop.radius} step="1" min="0" max="150" onChange={(event)=>{
+              setStateTop({ ...stateTop, radius: event.target.value })
+              updateBorderRadius(document.getElementById('main-box'), event.target.value, 'top')
             }}/>
           </div>
         </div>
-      </div>
-      <br/>
+
+        <div className="custumize-section">
+          <p>Righ</p>
+          <div className="costumize-area">
+            Style <input name="style" type="text" value={stateRight.style} onChange={(event)=>{
+              setStateRight({ ...stateRight, style: event.target.value })
+              updateBorderStyle(document.getElementById('main-box'), event.target.value, 'right')
+            }}/>
+          </div>
+          <br/>
+          <div className="costumize-area">
+            Color <input name="color" type="color" onChange={(event)=>{
+              setStateRight({ ...stateRight, color: event.target.value })
+              updateBorderColor(document.getElementById('main-box'), event.target.value, 'right')
+            }}/>
+          </div>
+          <br/>
+          <div className="costumize-area">
+            Size <input name="size" type="number" onChange={(event)=>{
+              setStateRight({ ...stateRight, size: event.target.value + 'px' })
+              updateBorderSize(document.getElementById('main-box'), event.target.value, 'right')
+            }}/>
+          </div>
+          <br/>
+          <div className="costumize-area">
+            Radius <input name="radius" type="range" value={stateRight.radius} step="1" min="0" max="150" onChange={(event)=>{
+              setStateRight({ ...stateRight, radius: event.target.value })
+              updateBorderRadius(document.getElementById('main-box'), event.target.value, 'right')
+            }}/>
+          </div>
+        </div>
+
+        <div className="custumize-section">
+          <p>Bottom</p>
+          <div className="costumize-area">
+            Style <input name="style" type="text" value={stateButtom.style} onChange={(event)=>{
+              setStateButtom({ ...stateButtom, style: event.target.value })
+              updateBorderStyle(document.getElementById('main-box'), event.target.value, 'bottom')
+            }}/>
+          </div>
+          <br/>
+          <div className="costumize-area">
+            Color <input name="color" type="color" onChange={(event)=>{
+              setStateButtom({ ...stateButtom, color: event.target.value })
+              updateBorderColor(document.getElementById('main-box'), event.target.value, 'bottom')
+            }}/>
+          </div>
+          <br/>
+          <div className="costumize-area">
+            Size <input name="size" type="number" onChange={(event)=>{
+              setStateButtom({ ...stateButtom, size: event.target.value + 'px' })
+              updateBorderSize(document.getElementById('main-box'), event.target.value, 'bottom')
+            }}/>
+          </div>
+          <br/>
+          <div className="costumize-area">
+            Radius <input name="radius" type="range" value={stateButtom.radius} step="1" min="0" max="150" onChange={(event)=>{
+              setStateButtom({ ...stateButtom, radius: event.target.value })
+              updateBorderRadius(document.getElementById('main-box'), event.target.value, 'bottom')
+            }}/>
+          </div>
+        </div>
+
+        <div className="custumize-section">
+          <p>Left</p>
+          <div className="costumize-area">
+            Style <input name="style" type="text" value={stateLeft.style} onChange={(event)=>{
+              setStateLeft({ ...stateLeft, style: event.target.value })
+              updateBorderStyle(document.getElementById('main-box'), event.target.value, 'left')
+            }}/>
+          </div>
+          <br/>
+          <div className="costumize-area">
+            Color <input name="color" type="color" onChange={(event)=>{
+              setStateLeft({ ...stateLeft, color: event.target.value })
+              updateBorderColor(document.getElementById('main-box'), event.target.value, 'left')
+            }}/>
+          </div>
+          <br/>
+          <div className="costumize-area">
+            Size <input name="size" type="number" onChange={(event)=>{
+              setStateLeft({ ...stateLeft, size: event.target.value + 'px' })
+              updateBorderSize(document.getElementById('main-box'), event.target.value, 'left')
+            }}/>
+          </div>
+          <br/>
+          <div className="costumize-area">
+            Radius <input name="radius" type="range" value={stateLeft.radius} step="1" min="0" max="150" onChange={(event)=>{
+              setStateLeft({ ...stateLeft, radius: event.target.value })
+              updateBorderRadius(document.getElementById('main-box'), event.target.value, 'left')
+            }}/>
+          </div>
+        </div>
       
-      <textarea id="text-to-copy" type="text" value={`border: ${state.size} ${state.style} ${state.color};\nborder-radius: ${state.radius}px;`}/>
+      
+      </div>
+      
+
+      <textarea id="text-to-copy" type="text" value={`
+border-style: ${stateTop.style} ${stateRight.style} ${stateButtom.style} ${stateLeft.style};
+border-color: ${stateTop.color} ${stateRight.color} ${stateButtom.color} ${stateLeft.color};
+border-width: ${stateTop.size} ${stateRight.size} ${stateButtom.size} ${stateLeft.size};
+border-radius: ${stateTop.radius}px ${stateRight.radius}px ${stateButtom.radius}px ${stateLeft.radius}px;
+      `}/>
       <br/>
       <button onClick={() => {
         const areaToCopy = document.getElementById("text-to-copy")

@@ -14,8 +14,8 @@ body {
 }
 
 #main-box {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   margin: auto auto 20px auto;
   border: 2px solid #000;
   background: rgba(0, 0, 0, 0.123);
@@ -30,6 +30,12 @@ body {
   display: flex;
 }
 
+.custumize-section {
+  border: solid 1px rgb(255, 0, 0);
+  margin: 10px;
+  padding: 10px;
+}
+
 input {
   max-width: 100px;
   text-align: center;
@@ -39,9 +45,8 @@ input {
 
 textarea {
   margin: 5px;
-  padding: 5px;
-  min-width: 150px;
-  min-height: 50px;
+  min-width: 300px;
+  min-height: 100px;
   border: none;
   border-radius: 10px;
 }
