@@ -10,21 +10,20 @@ function App() {
     radius: '0',
   })
 
-  function updateBorderStyle(value) {
-    const mainBox = document.getElementById('main-box')
+  function updateBorderStyle(tag, value) {
+    const mainBox = tag
     mainBox.style.borderStyle = value
   }
-  function updateBorderColor(value) {
-    const mainBox = document.getElementById('main-box')
+  function updateBorderColor(tag, value) {
+    const mainBox = tag
     mainBox.style.borderColor = value
   }
-  function updateBorderSize(value) {
-    const mainBox = document.getElementById('main-box')
+  function updateBorderSize(tag, value) {
+    const mainBox = tag
     mainBox.style.borderWidth = value + 'px'
   }
-  function updateBorderRadius(value) {
-    const mainBox = document.getElementById('main-box')
-    mainBox.style.borderRadius = value + 'px'
+  function updateBorderRadius(tag, value) {
+    tag.style.borderRadius = value + 'px'
   }
 
   return (
@@ -34,28 +33,28 @@ function App() {
       <div className="costumize-area">
         Style <input name="style" type="text" value={state.style} onChange={(event)=>{
           setState({ ...state, style: event.target.value })
-          updateBorderStyle(event.target.value)
+          updateBorderStyle(document.getElementById('main-box'), event.target.value)
         }}/>
       </div>
       <br/>
       <div className="costumize-area">
         Color <input name="color" type="color" onChange={(event)=>{
           setState({ ...state, color: event.target.value })
-          updateBorderColor(event.target.value)
+          updateBorderColor(document.getElementById('main-box'), event.target.value)
         }}/>
       </div>
       <br/>
       <div className="costumize-area">
         Size <input name="size" type="number" onChange={(event)=>{
           setState({ ...state, size: event.target.value + 'px' })
-          updateBorderSize(event.target.value)
+          updateBorderSize(document.getElementById('main-box'), event.target.value)
         }}/>
       </div>
       <br/>
       <div className="costumize-area">
         Radius <input name="radius" type="range" value={state.radius} step="1" min="0" max="150" onChange={(event)=>{
           setState({ ...state, radius: event.target.value })
-          updateBorderRadius(event.target.value)
+          updateBorderRadius(document.getElementById('main-box'), event.target.value)
         }}/>
       </div>
       <br/>
