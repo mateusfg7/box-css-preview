@@ -4,8 +4,8 @@ import './App.css';
 function App() {
 
   const [state, setState] = useState({
-    style: '',
-    color: '',
+    style: 'solid',
+    color: '#000',
     size: '0px',
     radius: '0',
   })
@@ -33,32 +33,40 @@ function App() {
 
       <div className="costumize-area">
         Style <input name="style" type="text" value={state.style} onChange={(event)=>{
-          setState({ style: event.target.value })
+          setState({ ...state, style: event.target.value })
           updateBorderStyle(event.target.value)
         }}/>
       </div>
       <br/>
       <div className="costumize-area">
         Color <input name="color" type="color" onChange={(event)=>{
-          setState({ color: event.target.value })
+          setState({ ...state, color: event.target.value })
           updateBorderColor(event.target.value)
         }}/>
       </div>
       <br/>
       <div className="costumize-area">
         Size <input name="size" type="number" onChange={(event)=>{
-          setState({ size: event.target.value + 'px' })
+          setState({ ...state, size: event.target.value + 'px' })
           updateBorderSize(event.target.value)
         }}/>
       </div>
       <br/>
       <div className="costumize-area">
         Radius <input name="radius" type="range" value={state.radius} step="1" min="0" max="150" onChange={(event)=>{
-          setState({ radius: event.target.value })
+          setState({ ...state, radius: event.target.value })
           updateBorderRadius(event.target.value)
         }}/>
       </div>
       <br/>
+      
+      <textarea id="text-to-copy" type="text" value={`border: ${state.size} ${state.style} ${state.color};\nborder-radius: ${state.radius}px;`}/>
+      
+      <button onClick={() => {
+        const areaToCopy = document.getElementById("text-to-copy")
+        areaToCopy.select()
+        document.execCommand('copy')
+      }}>Copy css to clipboard</button>
 
     </div>
   );
