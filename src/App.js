@@ -11,16 +11,13 @@ function App() {
   })
 
   function updateBorderStyle(tag, value) {
-    const mainBox = tag
-    mainBox.style.borderStyle = value
+    tag.style.borderStyle = value
   }
   function updateBorderColor(tag, value) {
-    const mainBox = tag
-    mainBox.style.borderColor = value
+    tag.style.borderColor = value
   }
   function updateBorderSize(tag, value) {
-    const mainBox = tag
-    mainBox.style.borderWidth = value + 'px'
+    tag.style.borderWidth = value + 'px'
   }
   function updateBorderRadius(tag, value) {
     tag.style.borderRadius = value + 'px'
