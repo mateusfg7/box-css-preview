@@ -18,7 +18,7 @@ body {
   width: 100px;
   margin: auto auto 20px auto;
   border: 2px solid #000;
-  background: rgba(0, 0, 0, 0.281);
+  background: rgba(0, 0, 0, 0.123);
 }
 
 .costumize-area {
@@ -31,4 +31,30 @@ input {
   text-align: center;
   border: none;
   border-radius: 10px;
+}
+
+textarea {
+  margin: 5px;
+  padding: 5px;
+  min-width: 150px;
+  min-height: 50px;
+  border: none;
+  border-radius: 10px;
+}
+textarea::selection {
+  color: #fff;
+  background: #000;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  transition: .2s;
+}
+button:hover {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
 }

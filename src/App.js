@@ -61,7 +61,7 @@ function App() {
       <br/>
       
       <textarea id="text-to-copy" type="text" value={`border: ${state.size} ${state.style} ${state.color};\nborder-radius: ${state.radius}px;`}/>
-      
+      <br/>
       <button onClick={() => {
         const areaToCopy = document.getElementById("text-to-copy")
         areaToCopy.select()
