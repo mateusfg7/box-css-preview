@@ -26,6 +26,10 @@ body {
   /* border: solid 1px rgb(255, 0, 0); */
 }
 
+#area {
+  display: flex;
+}
+
 input {
   max-width: 100px;
   text-align: center;
