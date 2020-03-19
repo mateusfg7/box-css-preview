@@ -69,7 +69,7 @@ function App() {
             Radius <input name="radius" type="range" value={stateTop.radius} step="1" min="0" max="150" onChange={(event)=>{
               setStateTop({ ...stateTop, radius: event.target.value })
               updateBorderRadius(document.getElementById('main-box'), event.target.value, 'top')
-            }}/> <span>{stateTop.radius+'px'}</span>
+            }}/> <span>{stateTop.radius+'%'}</span>
           </div>
         </div>
 
@@ -100,7 +100,7 @@ function App() {
             Radius <input name="radius" type="range" value={stateRight.radius} step="1" min="0" max="150" onChange={(event)=>{
               setStateRight({ ...stateRight, radius: event.target.value })
               updateBorderRadius(document.getElementById('main-box'), event.target.value, 'right')
-            }}/> <span>{stateRight.radius+'px'}</span>
+            }}/> <span>{stateRight.radius+'%'}</span>
           </div>
         </div>
 
@@ -131,7 +131,7 @@ function App() {
             Radius <input name="radius" type="range" value={stateButtom.radius} step="1" min="0" max="150" onChange={(event)=>{
               setStateButtom({ ...stateButtom, radius: event.target.value })
               updateBorderRadius(document.getElementById('main-box'), event.target.value, 'bottom')
-            }}/> <span>{stateButtom.radius+'px'}</span>
+            }}/> <span>{stateButtom.radius+'%'}</span>
           </div>
         </div>
 
@@ -162,7 +162,7 @@ function App() {
             Radius <input name="radius" type="range" value={stateLeft.radius} step="1" min="0" max="150" onChange={(event)=>{
               setStateLeft({ ...stateLeft, radius: event.target.value })
               updateBorderRadius(document.getElementById('main-box'), event.target.value, 'left')
-            }}/> <span>{stateLeft.radius+'px'}</span>
+            }}/> <span>{stateLeft.radius+'%'}</span>
           </div>
         </div>
       
