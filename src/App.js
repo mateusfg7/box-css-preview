@@ -174,7 +174,7 @@ function App() {
 border-style: ${stateTop.style} ${stateRight.style} ${stateButtom.style} ${stateLeft.style};
 border-color: ${stateTop.color} ${stateRight.color} ${stateButtom.color} ${stateLeft.color};
 border-width: ${stateTop.size} ${stateRight.size} ${stateButtom.size} ${stateLeft.size};
-border-radius: ${stateTop.radius}px ${stateRight.radius}px ${stateButtom.radius}px ${stateLeft.radius}px;
+border-radius: ${stateTop.radius}% ${stateRight.radius}% ${stateButtom.radius}% ${stateLeft.radius}%;
       `}/>
       <br/>
       <button onClick={() => {
