@@ -66,7 +66,7 @@ function App() {
           </div>
           <br/>
           <div className="costumize-area">
-            Radius <input name="radius" type="range" value={stateTop.radius} step="1" min="0" max="150" onChange={(event)=>{
+            Radius <input name="radius" type="range" value={stateTop.radius} step="1" min="0" max="100" onChange={(event)=>{
               setStateTop({ ...stateTop, radius: event.target.value })
               updateBorderRadius(document.getElementById('main-box'), event.target.value, 'top')
             }}/> <span>{stateTop.radius+'%'}</span>
@@ -97,7 +97,7 @@ function App() {
           </div>
           <br/>
           <div className="costumize-area">
-            Radius <input name="radius" type="range" value={stateRight.radius} step="1" min="0" max="150" onChange={(event)=>{
+            Radius <input name="radius" type="range" value={stateRight.radius} step="1" min="0" max="100" onChange={(event)=>{
               setStateRight({ ...stateRight, radius: event.target.value })
               updateBorderRadius(document.getElementById('main-box'), event.target.value, 'right')
             }}/> <span>{stateRight.radius+'%'}</span>
@@ -128,7 +128,7 @@ function App() {
           </div>
           <br/>
           <div className="costumize-area">
-            Radius <input name="radius" type="range" value={stateButtom.radius} step="1" min="0" max="150" onChange={(event)=>{
+            Radius <input name="radius" type="range" value={stateButtom.radius} step="1" min="0" max="100" onChange={(event)=>{
               setStateButtom({ ...stateButtom, radius: event.target.value })
               updateBorderRadius(document.getElementById('main-box'), event.target.value, 'bottom')
             }}/> <span>{stateButtom.radius+'%'}</span>
@@ -159,7 +159,7 @@ function App() {
           </div>
           <br/>
           <div className="costumize-area">
-            Radius <input name="radius" type="range" value={stateLeft.radius} step="1" min="0" max="150" onChange={(event)=>{
+            Radius <input name="radius" type="range" value={stateLeft.radius} step="1" min="0" max="100" onChange={(event)=>{
               setStateLeft({ ...stateLeft, radius: event.target.value })
               updateBorderRadius(document.getElementById('main-box'), event.target.value, 'left')
             }}/> <span>{stateLeft.radius+'%'}</span>
