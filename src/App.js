@@ -180,6 +180,10 @@ border-radius: ${stateTop.radius}% ${stateRight.radius}% ${stateButtom.radius}% 
         areaToCopy.select()
         document.execCommand('copy')
       }}>Copy css to clipboard</button>
+
+      <div id="floating-links">
+        <a href="https://www.w3schools.com/CSSref/pr_border-style.asp" target="_blank" rel="noopener noreferrer">Styles</a>
+      </div>
       
     </div>
   );

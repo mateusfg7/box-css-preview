@@ -77,3 +77,20 @@ button:hover {
   background: rgba(27, 27, 27, 0.493);
   cursor: pointer;
 }
+
+#floating-links {
+  position: fixed;
+  width: min-content;
+  right: 30px;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.192);
+  padding: 10px;
+}
+
+#floating-links a {
+  text-decoration: none;
+  color: rgb(190, 190, 190);
+}
+#floating-links a:hover {
+  text-decoration: underline;
+}
