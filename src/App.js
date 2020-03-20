@@ -41,7 +41,6 @@ function App() {
       
       <div id="area">
         
-
         <div className="custumize-section">
           <p>Top</p>
           <div className="costumize-area">
@@ -165,7 +164,6 @@ function App() {
             }}/> <span>{stateLeft.radius+'%'}</span>
           </div>
         </div>
-      
       
       </div>
       
