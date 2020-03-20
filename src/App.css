@@ -50,6 +50,12 @@ input {
   color: #fff;
 }
 
+h3 {
+  text-shadow: rgba(0, 0, 0, 0.548) 2px 2px 0px;
+  font-size: 25px;
+  margin: 20px 0 0 0;
+}
+
 textarea {
   margin: 5px;
   padding: 10px;
