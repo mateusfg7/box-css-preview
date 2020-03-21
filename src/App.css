@@ -16,10 +16,15 @@ body {
   padding: 10px;
 }
 
+#main-box-area {
+  background: white;
+  width: min-content;
+  margin: auto auto 20px auto;
+  padding: 10px;
+}
 #main-box {
   height: 150px;
   width: 150px;
-  margin: auto auto 20px auto;
   border: 5px solid rgb(0, 0, 0);
 }
 

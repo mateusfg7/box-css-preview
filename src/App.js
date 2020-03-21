@@ -36,7 +36,9 @@ function App() {
   
   return (
     <div className="App">
-      <div id="main-box"></div>
+      <div id="main-box-area">
+        <div id="main-box"></div>
+      </div>
       
       
       <div id="area">
