@@ -3,7 +3,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 99vh;
-  background: rgb(83, 83, 83);
+  /* background: rgb(83, 83, 83); */
+  background: url('https://media.giphy.com/media/l0HlSIXEdFXVivfTG/giphy.gif') no-repeat 50% 50%;
+  background-color: #000;
   color: rgb(214, 214, 214);
 }
 
