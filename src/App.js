@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { faPlusSquare, faMinusSquare } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import './App.css';
 
 import updateBorderStyle from './functions/updateBorderStyle'
@@ -32,12 +35,57 @@ function App() {
     size: '5px',
     radius: '0',
   })
+  const [boxSize, setBoxSize] = useState({
+    heigth: 150,
+    width: 150
+  })
 
+  function changeBoxSize(direction) {
+    const mainBox = document.getElementById("main-box")
+    
+    if (direction === "height-plus")
+    {
+      const newHeight = boxSize.heigth + 1
+      mainBox.style.height = newHeight + 'px'
+      setBoxSize({ ...boxSize, heigth: newHeight })
+    }
+    else if (direction === "height-minus")
+    {
+      const newHeight = boxSize.heigth - 1
+      mainBox.style.height = newHeight + 'px'
+      setBoxSize({ ...boxSize, heigth: newHeight })
+    }
+    else if (direction === "width-plus")
+    {
+      const newWidth = boxSize.width + 1
+      mainBox.style.width = newWidth + 'px'
+      setBoxSize({ ...boxSize, width: newWidth })
+    }
+    else if (direction === "width-minus")
+    {
+      const newWidth = boxSize.width - 1
+      mainBox.style.width = newWidth + 'px'
+      setBoxSize({ ...boxSize, width: newWidth })
+    }
+  }
   
   return (
     <div className="App">
       <div id="main-box-area">
-        <div id="main-box"></div>
+        <span className="box-size">{boxSize.width}x{boxSize.heigth}px</span>
+          <div id="main-box"></div>
+        <div className="size-change">
+          <section>
+            <span>w</span>
+            <span className="size-changer size-width-minus" onClick={() => changeBoxSize("width-minus")}><FontAwesomeIcon icon={faMinusSquare}/></span>
+            <span className="size-changer size-width-plus" onClick={() => changeBoxSize("width-plus")}><FontAwesomeIcon icon={faPlusSquare}/></span>
+          </section>
+          <section>
+            <span>h</span>
+            <span className="size-changer size-height-minus" onClick={() => changeBoxSize("height-minus")}><FontAwesomeIcon icon={faMinusSquare}/></span>
+            <span className="size-changer size-height-plus" onClick={() => changeBoxSize("height-plus")}><FontAwesomeIcon icon={faPlusSquare}/></span>
+          </section>
+        </div>
       </div>
       
       
