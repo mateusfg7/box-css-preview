@@ -18,23 +18,28 @@ body {
 }
 
 #main-box-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.849);
   width: min-content;
+  min-width: 100px;
   margin: auto auto 20px auto;
   padding: 10px;
-  /* border: solid 1px rgb(255, 0, 0); */
 }
 #main-box {
   height: 150px;
   width: 150px;
   border: 5px solid rgb(255, 255, 255);
+  margin: 5px;
 }
 
 .costumize-area {
   margin: -5px;
   /* border: solid 1px rgb(255, 0, 0); */
 }
-span {
+.costumize-area span {
   color: rgba(255, 255, 255, 0.438);
 }
 
@@ -107,4 +112,33 @@ button:hover {
 }
 #floating-links a:hover {
   text-decoration: underline;
+}
+
+.box-size {
+  color: rgba(255, 255, 255, 0.767);
+}
+
+.size-change {
+  display: flex;
+  align-items: center;
+}
+.size-change section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 5px;
+  color: rgb(201, 201, 201);
+}
+
+.size-changer {
+  margin: 2px;
+  font-size: 15px;
+  transition: .2s;
+}
+.size-changer:hover {
+  color: #fff;
+  cursor: pointer;
 }
