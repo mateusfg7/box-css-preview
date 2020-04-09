@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { faPlusSquare, faMinusSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import './reset.css';
 import './App.css';
 
 import updateBorderStyle from './functions/updateBorderStyle'
@@ -91,34 +92,64 @@ function App() {
       
       <div id="area">
         
-        <div className="custumize-section">
+        <div className="custumize-section"> 
           <p>Top</p>
           <div className="costumize-area">
-            Style <input name="style" type="text" value={stateTop.style} onChange={(event)=>{
-              setStateTop({ ...stateTop, style: event.target.value })
-              updateBorderStyle(document.getElementById('main-box'), event.target.value, 'top')
-            }}/>
+            Style <input 
+                    name="style"
+                    type="text"
+                    value={stateTop.style}
+                    onChange={
+                      (event)=> {
+                        setStateTop({ ...stateTop, style: event.target.value })
+                        updateBorderStyle(document.getElementById('main-box'), event.target.value, 'top')
+                      }
+                    }
+                  />
           </div>
           <br/>
           <div className="costumize-area">
-            Color <input name="color" type="color" onChange={(event)=>{
-              setStateTop({ ...stateTop, color: event.target.value })
-              updateBorderColor(document.getElementById('main-box'), event.target.value, 'top')
-            }}/>
+            Color <input 
+                    name="color" 
+                    type="color" 
+                    onChange={
+                      (event)=>{
+                        setStateTop({ ...stateTop, color: event.target.value })
+                        updateBorderColor(document.getElementById('main-box'), event.target.value, 'top')
+                      }
+                    }
+                  />
           </div>
           <br/>
           <div className="costumize-area">
-            Size <input name="size" type="number" onChange={(event)=>{
-              setStateTop({ ...stateTop, size: event.target.value + 'px' })
-              updateBorderSize(document.getElementById('main-box'), event.target.value, 'top')
-            }}/>
+            Size <input 
+                  name="size" 
+                  type="number" 
+                  onChange={
+                    (event)=>{
+                      setStateTop({ ...stateTop, size: event.target.value + 'px' })
+                      updateBorderSize(document.getElementById('main-box'), event.target.value, 'top')
+                    }
+                  }
+                />
           </div>
           <br/>
           <div className="costumize-area">
-            Radius <input name="radius" type="range" value={stateTop.radius} step="1" min="0" max="100" onChange={(event)=>{
-              setStateTop({ ...stateTop, radius: event.target.value })
-              updateBorderRadius(document.getElementById('main-box'), event.target.value, 'top')
-            }}/> <span>{stateTop.radius+'%'}</span>
+            Radius <input 
+                    name="radius" 
+                    type="range" 
+                    value={stateTop.radius} 
+                    step="1" 
+                    min="0" 
+                    max="100" 
+                    onChange={
+                      (event)=>{
+                        setStateTop({ ...stateTop, radius: event.target.value })
+                        updateBorderRadius(document.getElementById('main-box'), event.target.value, 'top')
+                      }
+                    }
+                  /> 
+            <span>{stateTop.radius+'%'}</span>
           </div>
         </div>
 

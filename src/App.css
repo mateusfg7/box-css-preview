@@ -1,43 +1,47 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 99vh;
-  /* background: rgb(83, 83, 83); */
-  background: url('https://media.giphy.com/media/l0HlSIXEdFXVivfTG/giphy.gif') no-repeat 50% 50%;
-  background-color: #000;
-  color: rgb(255, 255, 255);
+  text-align: center;
+
+  background-color: rgb(199, 199, 199);
+  
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .App {
-  background: rgba(0, 0, 0, 0.849);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  /* border: solid 1px rgb(255, 0, 0); */
-  padding: 10px;
 }
 
 #main-box-area {
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.849);
+  
   width: min-content;
   min-width: 100px;
   margin: auto auto 20px auto;
-  padding: 10px;
+  padding: 5px;
 }
 #main-box {
   height: 150px;
   width: 150px;
-  border: 5px solid rgb(255, 255, 255);
+
+  border: 5px solid rgb(0, 0, 0);
+  
   margin: 5px;
 }
 
 .costumize-area {
+  display: flex;
+  justify-content: space-between;
+  
   margin: -5px;
-  /* border: solid 1px rgb(255, 0, 0); */
 }
 .costumize-area span {
   color: rgba(255, 255, 255, 0.438);
@@ -48,19 +52,32 @@ body {
 }
 
 .custumize-section {
-  background: rgb(15, 15, 15);
+  background: rgb(54, 54, 54);
+  color: #fff;
+  
   margin: 10px;
   padding: 10px;
+
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.438);
 }
 
+.custumize-section p {
+  margin-bottom: 15px;
+}
+
+
 input {
-  max-width: 100px;
+  max-width: 80px;
   padding: 5px;
   text-align: center;
   border: none;
   border-radius: 10px;
   background: rgb(27, 27, 27);
   color: #fff;
+}
+input[type="range"] {
+  width: 60px;
+  margin: auto 15px;
 }
 
 h3 {
@@ -76,7 +93,7 @@ textarea {
   min-height: 90px;
   border: none;
   border-radius: 10px;
-  background: rgb(15, 15, 15);
+  background: rgb(54, 54, 54);
   color: #fff
 }
 textarea::selection {
@@ -88,12 +105,12 @@ button {
   border: none;
   border-radius: 10px;
   padding: 10px;
-  background: rgb(15, 15, 15);
+  background: rgb(54, 54, 54);
   color: #fff;
   transition: .2s;
 }
 button:hover {
-  background: rgba(15, 15, 15, 0.493);
+  background: rgba(54, 54, 54, 0.493);
   cursor: pointer;
 }
 
@@ -115,7 +132,7 @@ button:hover {
 }
 
 .box-size {
-  color: rgba(255, 255, 255, 0.767);
+  color: rgba(0, 0, 0, 0.767);
 }
 
 .size-change {
@@ -130,7 +147,7 @@ button:hover {
   border-radius: 5px;
   padding: 2px;
   margin: 5px;
-  color: rgb(201, 201, 201);
+  color: rgb(10, 10, 10);
 }
 
 .size-changer {
@@ -139,6 +156,6 @@ button:hover {
   transition: .2s;
 }
 .size-changer:hover {
-  color: #fff;
+  color: rgba(10, 10, 10, 0.856);
   cursor: pointer;
 }
