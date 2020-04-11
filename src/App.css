@@ -25,7 +25,7 @@ body {
   
   width: min-content;
   min-width: 100px;
-  margin: auto auto 20px auto;
+  margin: auto auto 20px;
   padding: 5px;
 }
 #main-box {
@@ -83,7 +83,7 @@ input[type="range"] {
 h3 {
   text-shadow: rgba(0, 0, 0, 0.548) 2px 2px 0;
   font-size: 25px;
-  margin: 20px 0 0 0;
+  margin: 20px 0 0;
 }
 
 textarea {
