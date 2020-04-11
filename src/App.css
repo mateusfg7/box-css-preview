@@ -58,7 +58,7 @@ body {
   margin: 10px;
   padding: 10px;
 
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.438);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.438);
 }
 
 .custumize-section p {
@@ -81,7 +81,7 @@ input[type="range"] {
 }
 
 h3 {
-  text-shadow: rgba(0, 0, 0, 0.548) 2px 2px 0px;
+  text-shadow: rgba(0, 0, 0, 0.548) 2px 2px 0;
   font-size: 25px;
   margin: 20px 0 0 0;
 }
