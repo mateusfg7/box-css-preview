@@ -1,11 +1,18 @@
+:root {
+  --inputs-background: #252525;
+  --main-section-background: #181818;
+  --box-shadow: 0 0 20px rgba(0, 0, 0, 0.438);
+  --main-gradient: linear-gradient(to right, rgba(0, 242, 96, .5), rgba(5, 117, 230, .5));
+}
+
 body {
   display: flex;
   justify-content: center;
   text-align: center;
 
-  background-color: rgb(199, 199, 199);
+  background-color: #171717;
   
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -32,9 +39,37 @@ body {
   height: 150px;
   width: 150px;
 
-  border: 5px solid rgb(0, 0, 0);
+  border: 5px solid;
+  border-color: #ffffff;
   
   margin: 5px;
+}
+
+.box-size {
+  color: rgba(255, 255, 255, 0.767);
+}
+
+.size-change {
+  display: flex;
+  align-items: center;
+}
+.size-change section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.size-changer {
+  margin: 2px;
+  font-size: 15px;
+  transition: .2s;
+}
+.size-changer:hover {
+  cursor: pointer;
 }
 
 .costumize-area {
@@ -52,13 +87,13 @@ body {
 }
 
 .custumize-section {
-  background: rgb(54, 54, 54);
+  background: var(--main-section-background);
   color: #fff;
   
   margin: 10px;
   padding: 10px;
 
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.438);
+  box-shadow: var(--box-shadow);
 }
 
 .custumize-section p {
@@ -72,11 +107,16 @@ input {
   text-align: center;
   border: none;
   border-radius: 10px;
-  background: rgb(27, 27, 27);
+  background: var(--inputs-background);
   color: #fff;
+  transition: 1s;
 }
 input[type="range"] {
   width: 60px;
+  margin: auto 15px;
+}
+input[type="number"] {
+  width: 40px;
   margin: auto 15px;
 }
 
@@ -89,11 +129,15 @@ h3 {
 textarea {
   margin: 5px;
   padding: 10px;
+
   min-width: 300px;
   min-height: 90px;
+  
   border: none;
-  border-radius: 10px;
-  background: rgb(54, 54, 54);
+  border-radius: 10%;
+  
+  background: var(--main-section-background);
+  box-shadow: var(--box-shadow);
   color: #fff
 }
 textarea::selection {
@@ -105,7 +149,8 @@ button {
   border: none;
   border-radius: 10px;
   padding: 10px;
-  background: rgb(54, 54, 54);
+  background: var(--main-section-background);
+  box-shadow: var(--box-shadow);
   color: #fff;
   transition: .2s;
 }
@@ -131,30 +176,3 @@ button:hover {
   text-decoration: underline;
 }
 
-.box-size {
-  color: rgba(0, 0, 0, 0.767);
-}
-
-.size-change {
-  display: flex;
-  align-items: center;
-}
-.size-change section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  padding: 2px;
-  margin: 5px;
-  color: rgb(10, 10, 10);
-}
-
-.size-changer {
-  margin: 2px;
-  font-size: 15px;
-  transition: .2s;
-}
-.size-changer:hover {
-  color: rgba(10, 10, 10, 0.856);
-  cursor: pointer;
-}

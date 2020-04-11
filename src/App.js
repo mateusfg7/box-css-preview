@@ -78,13 +78,13 @@ function App() {
         <div className="size-change">
           <section>
             <span>w</span>
-            <span className="size-changer size-width-minus" onClick={() => changeBoxSize("width-minus")}><FontAwesomeIcon icon={faMinusSquare}/></span>
-            <span className="size-changer size-width-plus" onClick={() => changeBoxSize("width-plus")}><FontAwesomeIcon icon={faPlusSquare}/></span>
+            <span className="size-changer size-changer-minus size-width-minus" onClick={() => changeBoxSize("width-minus")}><FontAwesomeIcon icon={faMinusSquare}/></span>
+            <span className="size-changer size-changer-plus size-width-plus" onClick={() => changeBoxSize("width-plus")}><FontAwesomeIcon icon={faPlusSquare}/></span>
           </section>
           <section>
             <span>h</span>
-            <span className="size-changer size-height-minus" onClick={() => changeBoxSize("height-minus")}><FontAwesomeIcon icon={faMinusSquare}/></span>
-            <span className="size-changer size-height-plus" onClick={() => changeBoxSize("height-plus")}><FontAwesomeIcon icon={faPlusSquare}/></span>
+            <span className="size-changer size-changer-minus size-height-minus" onClick={() => changeBoxSize("height-minus")}><FontAwesomeIcon icon={faMinusSquare}/></span>
+            <span className="size-changer size-changer-plus size-height-plus" onClick={() => changeBoxSize("height-plus")}><FontAwesomeIcon icon={faPlusSquare}/></span>
           </section>
         </div>
       </div>
