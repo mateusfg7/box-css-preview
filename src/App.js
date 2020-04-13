@@ -5,10 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './reset.css';
 import './App.css';
 
-import updateBorderStyle from './functions/updateBorderStyle'
-import updateBorderColor from './functions/updateBorderColor'
-import updateBorderSize from './functions/updateBorderSize'
-import updateBorderRadius from './functions/updateBorderRadius'
+import updateBorderStyle from './functions/BorderUpdates/updateBorderStyle'
+import updateBorderColor from './functions/BorderUpdates/updateBorderColor'
+import updateBorderSize from './functions/BorderUpdates/updateBorderSize'
+import updateBorderRadius from './functions/BorderUpdates/updateBorderRadius'
+
+import changeBoxSize from './functions/SizeUpdates/changeBoxSize'
 
 function App() {
 
@@ -41,34 +43,6 @@ function App() {
     width: 150
   })
 
-  function changeBoxSize(direction) {
-    const mainBox = document.getElementById("main-box")
-    
-    if (direction === "height-plus")
-    {
-      const newHeight = boxSize.heigth + 1
-      mainBox.style.height = newHeight + 'px'
-      setBoxSize({ ...boxSize, heigth: newHeight })
-    }
-    else if (direction === "height-minus")
-    {
-      const newHeight = boxSize.heigth - 1
-      mainBox.style.height = newHeight + 'px'
-      setBoxSize({ ...boxSize, heigth: newHeight })
-    }
-    else if (direction === "width-plus")
-    {
-      const newWidth = boxSize.width + 1
-      mainBox.style.width = newWidth + 'px'
-      setBoxSize({ ...boxSize, width: newWidth })
-    }
-    else if (direction === "width-minus")
-    {
-      const newWidth = boxSize.width - 1
-      mainBox.style.width = newWidth + 'px'
-      setBoxSize({ ...boxSize, width: newWidth })
-    }
-  }
   
   return (
     <div className="App">
@@ -78,13 +52,13 @@ function App() {
         <div className="size-change">
           <section>
             <span>w</span>
-            <span className="size-changer size-changer-minus size-width-minus" onClick={() => changeBoxSize("width-minus")}><FontAwesomeIcon icon={faMinusSquare}/></span>
-            <span className="size-changer size-changer-plus size-width-plus" onClick={() => changeBoxSize("width-plus")}><FontAwesomeIcon icon={faPlusSquare}/></span>
+            <span className="size-changer size-changer-minus size-width-minus" onClick={() => changeBoxSize("width-minus", boxSize, setBoxSize)}><FontAwesomeIcon icon={faMinusSquare}/></span>
+            <span className="size-changer size-changer-plus size-width-plus" onClick={() => changeBoxSize("width-plus", boxSize, setBoxSize)}><FontAwesomeIcon icon={faPlusSquare}/></span>
           </section>
           <section>
             <span>h</span>
-            <span className="size-changer size-changer-minus size-height-minus" onClick={() => changeBoxSize("height-minus")}><FontAwesomeIcon icon={faMinusSquare}/></span>
-            <span className="size-changer size-changer-plus size-height-plus" onClick={() => changeBoxSize("height-plus")}><FontAwesomeIcon icon={faPlusSquare}/></span>
+            <span className="size-changer size-changer-minus size-height-minus" onClick={() => changeBoxSize("height-minus", boxSize, setBoxSize)}><FontAwesomeIcon icon={faMinusSquare}/></span>
+            <span className="size-changer size-changer-plus size-height-plus" onClick={() => changeBoxSize("height-plus", boxSize, setBoxSize)}><FontAwesomeIcon icon={faPlusSquare}/></span>
           </section>
         </div>
       </div>
