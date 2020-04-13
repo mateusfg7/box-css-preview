@@ -8,6 +8,8 @@ A simple web page to see the preview of border css styles and get code
 
 [![GitHubIO Page](https://img.shields.io/static/v1?label=GitHub&message=IO&color=black&style=flat-square&logo=github)](mateusfg7.github.io/box-css-preview/)
 
+<img src="https://i.imgur.com/1y4GCFW.png"/>
+
 </h3>
 
 ---
