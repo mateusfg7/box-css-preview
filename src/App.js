@@ -95,17 +95,22 @@ function App() {
         <div className="custumize-section"> 
           <p>Top</p>
           <div className="costumize-area">
-            Style <input 
-                    name="style"
-                    type="text"
-                    value={stateTop.style}
-                    onChange={
-                      (event)=> {
-                        setStateTop({ ...stateTop, style: event.target.value })
-                        updateBorderStyle(document.getElementById('main-box'), event.target.value, 'top')
-                      }
+            Style <select onChange={
+                    (event) => {
+                      setStateTop({ ...stateTop, style: event.target.value })
+                      updateBorderStyle(document.getElementById('main-box'), event.target.value, 'top')
                     }
-                  />
+                  }>
+                    <option value="solid" selected>solid</option>
+                    <option value="dashed">dashed</option>
+                    <option value="double">double</option>
+                    <option value="dotted">dotted</option>
+                    <option value="groove">groove</option>
+                    <option value="ridge">ridge</option>
+                    <option value="inset">inset</option>
+                    <option value="outset">outset</option>
+                    <option value="hidden">hidden</option>
+                  </select>
           </div>
           <br/>
           <div className="costumize-area">
@@ -156,10 +161,22 @@ function App() {
         <div className="custumize-section">
           <p>Righ</p>
           <div className="costumize-area">
-            Style <input name="style" type="text" value={stateRight.style} onChange={(event)=>{
-              setStateRight({ ...stateRight, style: event.target.value })
-              updateBorderStyle(document.getElementById('main-box'), event.target.value, 'right')
-            }}/>
+            Style <select onChange={
+                    (event) => {
+                      setStateRight({ ...stateRight, style: event.target.value })
+                      updateBorderStyle(document.getElementById('main-box'), event.target.value, 'right')
+                    }
+                  }>
+                    <option value="solid" selected>solid</option>
+                    <option value="dashed">dashed</option>
+                    <option value="double">double</option>
+                    <option value="dotted">dotted</option>
+                    <option value="groove">groove</option>
+                    <option value="ridge">ridge</option>
+                    <option value="inset">inset</option>
+                    <option value="outset">outset</option>
+                    <option value="hidden">hidden</option>
+                  </select>
           </div>
           <br/>
           <div className="costumize-area">
@@ -187,10 +204,22 @@ function App() {
         <div className="custumize-section">
           <p>Bottom</p>
           <div className="costumize-area">
-            Style <input name="style" type="text" value={stateButtom.style} onChange={(event)=>{
-              setStateButtom({ ...stateButtom, style: event.target.value })
-              updateBorderStyle(document.getElementById('main-box'), event.target.value, 'bottom')
-            }}/>
+            Style <select onChange={
+                    (event) => {
+                      setStateButtom({ ...stateButtom, style: event.target.value })
+                      updateBorderStyle(document.getElementById('main-box'), event.target.value, 'bottom')
+                    }
+                  }>
+                    <option value="solid" selected>solid</option>
+                    <option value="dashed">dashed</option>
+                    <option value="double">double</option>
+                    <option value="dotted">dotted</option>
+                    <option value="groove">groove</option>
+                    <option value="ridge">ridge</option>
+                    <option value="inset">inset</option>
+                    <option value="outset">outset</option>
+                    <option value="hidden">hidden</option>
+                  </select>
           </div>
           <br/>
           <div className="costumize-area">
@@ -218,10 +247,22 @@ function App() {
         <div className="custumize-section">
           <p>Left</p>
           <div className="costumize-area">
-            Style <input name="style" type="text" value={stateLeft.style} onChange={(event)=>{
-              setStateLeft({ ...stateLeft, style: event.target.value })
-              updateBorderStyle(document.getElementById('main-box'), event.target.value, 'left')
-            }}/>
+            Style <select onChange={
+                    (event) => {
+                      setStateLeft({ ...stateLeft, style: event.target.value })
+                      updateBorderStyle(document.getElementById('main-box'), event.target.value, 'left')
+                    }
+                  }>
+                    <option value="solid" selected>solid</option>
+                    <option value="dashed">dashed</option>
+                    <option value="double">double</option>
+                    <option value="dotted">dotted</option>
+                    <option value="groove">groove</option>
+                    <option value="ridge">ridge</option>
+                    <option value="inset">inset</option>
+                    <option value="outset">outset</option>
+                    <option value="hidden">hidden</option>
+                  </select>
           </div>
           <br/>
           <div className="costumize-area">
@@ -261,10 +302,6 @@ border-radius: ${stateTop.radius}% ${stateRight.radius}% ${stateButtom.radius}% 
         areaToCopy.select()
         document.execCommand('copy')
       }}>Copy css to clipboard</button>
-
-      <div id="floating-links">
-        <a href="https://www.w3schools.com/CSSref/pr_border-style.asp" target="_blank" rel="noopener noreferrer">Styles</a>
-      </div>
       
     </div>
   );
