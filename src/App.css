@@ -24,8 +24,6 @@ body {
   align-items: center;
 }
 
-
-
 .costumize-area {
   display: flex;
   justify-content: space-between;
@@ -56,7 +54,6 @@ body {
   margin-bottom: 15px;
 }
 
-
 input {
   max-width: 80px;
   padding: 5px;
@@ -85,55 +82,4 @@ select {
   background: var(--inputs-background);
   color: #fff;
   transition: 1s;
-}
-
-.css-area {
-  margin: 20px 0 5px;
-  padding: 10px;
-
-  min-width: 300px;
-  min-height: 90px;
-  
-  border: none;
-  border-radius: var(--radius);
-  
-  background: var(--main-section-background);
-  box-shadow: var(--box-shadow);
-  color: #fff
-}
-
-h3 {
-  font-size: 25px;
-}
-
-textarea {
-  margin: 5px;
-  padding: 3px;
-
-  min-width: 300px;
-  min-height: 90px;
-  
-  border: 1px rgba(0, 0, 0, 0.233) solid;
-  border-radius: var(--radius);
-  
-  background: var(--main-section-background);
-  color: #fff
-}
-textarea::selection {
-  color: #000;
-  background: #fff;
-}
-
-button {
-  border: none;
-  border-radius: var(--radius);
-  padding: 10px;
-  background: var(--main-section-background);
-  box-shadow: var(--box-shadow);
-  color: #fff;
-  transition: .2s;
-}
-button:hover {
-  background: rgba(54, 54, 54, 0.493);
-  cursor: pointer;
 }
