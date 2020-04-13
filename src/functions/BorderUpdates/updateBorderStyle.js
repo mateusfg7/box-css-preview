@@ -1,14 +1,9 @@
 export default function updateBorderStyle(tag, value, side) {
-    if (side === 'top') {
-        tag.style.borderTopStyle = value
+    const methods = {
+        'top'() {tag.style.borderTopStyle = value},
+        'right'(){tag.style.borderRightStyle = value},
+        'bottom'(){tag.style.borderBottomStyle = value},
+        'left'(){tag.style.borderLeftStyle = value},
     }
-    if (side === 'right') {
-        tag.style.borderRightStyle = value
-    }
-    if (side === 'bottom') {
-        tag.style.borderBottomStyle = value
-    }
-    if (side === 'left') {
-        tag.style.borderLeftStyle = value
-    }
+    methods[side]()
 }

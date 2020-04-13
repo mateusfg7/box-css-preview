@@ -1,14 +1,9 @@
 export default function updateBorderRadius(tag, value, side) {
-    if (side === 'top') {
-        tag.style.borderTopLeftRadius = value + '%'
+    const methods = {
+        'top'() {tag.style.borderTopLeftRadius = value + '%'},
+        'right'(){tag.style.borderTopRightRadius = value + '%'},
+        'bottom'(){tag.style.borderBottomRightRadius = value + '%'},
+        'left'(){tag.style.borderBottomLeftRadius = value + '%'},
     }
-    if (side === 'right') {
-        tag.style.borderTopRightRadius = value + '%'
-    }
-    if (side === 'bottom') {
-        tag.style.borderBottomRightRadius = value + '%'
-    }
-    if (side === 'left') {
-        tag.style.borderBottomLeftRadius = value + '%'
-    }
+    methods[side]()
 }
