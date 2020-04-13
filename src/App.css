@@ -120,6 +120,17 @@ input[type="number"] {
   margin: auto 15px;
 }
 
+select {
+  max-width: 80px;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background: var(--inputs-background);
+  color: #fff;
+  transition: 1s;
+}
+
 h3 {
   text-shadow: rgba(0, 0, 0, 0.548) 2px 2px 0;
   font-size: 25px;
