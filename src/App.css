@@ -24,54 +24,7 @@ body {
   align-items: center;
 }
 
-#main-box-area {
-  display: flex;
-  flex-direction: column;
 
-  align-items: center;
-  justify-content: center;
-  
-  width: min-content;
-  min-width: 100px;
-  margin: auto auto 20px;
-  padding: 5px;
-}
-#main-box {
-  height: 150px;
-  width: 150px;
-
-  border: 5px solid;
-  border-color: #ffffff;
-  
-  margin: 5px;
-}
-
-.box-size {
-  color: rgba(255, 255, 255, 0.767);
-}
-
-.size-change {
-  display: flex;
-  align-items: center;
-}
-.size-change section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius);
-  padding: 2px;
-  margin: 5px;
-  color: rgb(255, 255, 255);
-}
-
-.size-changer {
-  margin: 2px;
-  font-size: 15px;
-  transition: .2s;
-}
-.size-changer:hover {
-  cursor: pointer;
-}
 
 .costumize-area {
   display: flex;
@@ -184,13 +137,3 @@ button:hover {
   background: rgba(54, 54, 54, 0.493);
   cursor: pointer;
 }
-
-#floating-links {
-  position: fixed;
-  width: min-content;
-  right: 30px;
-  bottom: 10px;
-  background: rgba(0, 0, 0, 0.192);
-  padding: 10px;
-}
-

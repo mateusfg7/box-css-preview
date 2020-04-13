@@ -5,12 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './reset.css';
 import './App.css';
 
+import BoxPreview from './components/BoxPreview'
+
 import updateBorderStyle from './functions/BorderUpdates/updateBorderStyle'
 import updateBorderColor from './functions/BorderUpdates/updateBorderColor'
 import updateBorderSize from './functions/BorderUpdates/updateBorderSize'
 import updateBorderRadius from './functions/BorderUpdates/updateBorderRadius'
 
-import changeBoxSize from './functions/SizeUpdates/changeBoxSize'
 
 function App() {
 
@@ -38,31 +39,11 @@ function App() {
     size: '5px',
     radius: '0',
   })
-  const [boxSize, setBoxSize] = useState({
-    heigth: 150,
-    width: 150
-  })
 
   
   return (
     <div className="App">
-      <div id="main-box-area">
-        <span className="box-size">{boxSize.width}x{boxSize.heigth}px</span>
-          <div id="main-box"></div>
-        <div className="size-change">
-          <section>
-            <span>w</span>
-            <span className="size-changer size-changer-minus size-width-minus" onClick={() => changeBoxSize("width-minus", boxSize, setBoxSize)}><FontAwesomeIcon icon={faMinusSquare}/></span>
-            <span className="size-changer size-changer-plus size-width-plus" onClick={() => changeBoxSize("width-plus", boxSize, setBoxSize)}><FontAwesomeIcon icon={faPlusSquare}/></span>
-          </section>
-          <section>
-            <span>h</span>
-            <span className="size-changer size-changer-minus size-height-minus" onClick={() => changeBoxSize("height-minus", boxSize, setBoxSize)}><FontAwesomeIcon icon={faMinusSquare}/></span>
-            <span className="size-changer size-changer-plus size-height-plus" onClick={() => changeBoxSize("height-plus", boxSize, setBoxSize)}><FontAwesomeIcon icon={faPlusSquare}/></span>
-          </section>
-        </div>
-      </div>
-      
+      <BoxPreview/>
       
       <div id="area">
         
