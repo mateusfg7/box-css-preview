@@ -14,25 +14,25 @@ function App() {
 
   const [stateTop, setStateTop] = useState({
     style: 'solid',
-    color: '#000',
+    color: '#fff',
     size: '5px',
     radius: '0',
   })
   const [stateRight, setStateRight] = useState({
     style: 'solid',
-    color: '#000',
+    color: '#fff',
     size: '5px',
     radius: '0',
   })
   const [stateBottom, setStateBottom] = useState({
     style: 'solid',
-    color: '#000',
+    color: '#fff',
     size: '5px',
     radius: '0',
   })
   const [stateLeft, setStateLeft] = useState({
     style: 'solid',
-    color: '#000',
+    color: '#fff',
     size: '5px',
     radius: '0',
   })
