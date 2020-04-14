@@ -24,62 +24,6 @@ body {
   align-items: center;
 }
 
-.costumize-area {
-  display: flex;
-  justify-content: space-between;
-  
-  margin: -5px;
-}
-.costumize-area span {
-  color: rgba(255, 255, 255, 0.438);
-}
-
 #area {
   display: flex;
-}
-
-.custumize-section {
-  background: var(--main-section-background);
-  color: #fff;
-  
-  margin: 10px;
-  padding: 10px;
-
-  border-radius: var(--radius);
-
-  box-shadow: var(--box-shadow);
-}
-
-.custumize-section p {
-  margin-bottom: 15px;
-}
-
-input {
-  max-width: 80px;
-  padding: 5px;
-  text-align: center;
-  border: none;
-  border-radius: var(--radius);
-  background: var(--inputs-background);
-  color: #fff;
-  transition: 1s;
-}
-input[type="range"] {
-  width: 60px;
-  margin: auto 15px;
-}
-input[type="number"] {
-  width: 40px;
-  margin: auto 15px;
-}
-
-select {
-  max-width: 80px;
-  padding: 5px;
-  text-align: center;
-  border: none;
-  border-radius: var(--radius);
-  background: var(--inputs-background);
-  color: #fff;
-  transition: 1s;
 }
