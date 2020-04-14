@@ -10,12 +10,6 @@ import BottomCustumizeSection from './components/CustumizeSection/Bottom';
 import LeftCustumizeSection from './components/CustumizeSection/Left';
 import CssGenerator from './components/CssGenerator'
 
-import updateBorderStyle from './functions/BorderUpdates/updateBorderStyle'
-import updateBorderColor from './functions/BorderUpdates/updateBorderColor'
-import updateBorderSize from './functions/BorderUpdates/updateBorderSize'
-import updateBorderRadius from './functions/BorderUpdates/updateBorderRadius'
-
-
 function App() {
 
   const [stateTop, setStateTop] = useState({
