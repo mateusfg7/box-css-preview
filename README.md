@@ -14,7 +14,7 @@ A simple web page to see the preview of border css styles and get code
 
 ---
 
-[![CodeFactor](https://www.codefactor.io/repository/github/mateusfg7/box-css-preview/badge)](https://www.codefactor.io/repository/github/mateusfg7/box-css-preview) [![MIT license](https://img.shields.io/github/license/mateusfg7/box-css-preview?color=%23000)]('./LICENSE')
+[![CodeFactor](https://www.codefactor.io/repository/github/mateusfg7/box-css-preview/badge)](https://www.codefactor.io/repository/github/mateusfg7/box-css-preview) [![MIT license](https://img.shields.io/github/license/mateusfg7/box-css-preview?color=%23000)](LICENSE)
 
 ## Useful Links
 
