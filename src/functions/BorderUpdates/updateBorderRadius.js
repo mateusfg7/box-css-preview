@@ -1,9 +1,23 @@
-export default function updateBorderRadius(tag, value, side) {
-    const methods = {
-        'top'() {tag.style.borderTopLeftRadius = value + '%'},
-        'right'(){tag.style.borderTopRightRadius = value + '%'},
-        'bottom'(){tag.style.borderBottomRightRadius = value + '%'},
-        'left'(){tag.style.borderBottomLeftRadius = value + '%'},
-    }
-    methods[side]()
+export default function updateBorderRadius(
+  parameterTag,
+  parameterValue,
+  parameterSide
+) {
+  const tag = parameterTag;
+
+  const methods = {
+    top() {
+      tag.style.borderTopLeftRadius = `${parameterValue}%`;
+    },
+    right() {
+      tag.style.borderTopRightRadius = `${parameterValue}%`;
+    },
+    bottom() {
+      tag.style.borderBottomRightRadius = `${parameterValue}%`;
+    },
+    left() {
+      tag.style.borderBottomLeftRadius = `${parameterValue}%`;
+    },
+  };
+  methods[parameterSide]();
 }
