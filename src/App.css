@@ -2,8 +2,12 @@
   --inputs-background: #252525;
   --main-section-background: #181818;
   --box-shadow: 0 0 20px rgba(0, 0, 0, 0.438);
-  --main-gradient: linear-gradient(to right, rgba(0, 242, 96, .5), rgba(5, 117, 230, .5));
-  --radius: 10px
+  --main-gradient: linear-gradient(
+    to right,
+    rgba(0, 242, 96, 0.5),
+    rgba(5, 117, 230, 0.5)
+  );
+  --radius: 10px;
 }
 
 body {
@@ -12,7 +16,7 @@ body {
   text-align: center;
 
   background-color: #171717;
-  
+
   color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
 }
