@@ -1,9 +1,23 @@
-export default function updateBorderStyle(tag, value, side) {
-    const methods = {
-        'top'() {tag.style.borderTopStyle = value},
-        'right'(){tag.style.borderRightStyle = value},
-        'bottom'(){tag.style.borderBottomStyle = value},
-        'left'(){tag.style.borderLeftStyle = value},
-    }
-    methods[side]()
+export default function updateBorderStyle(
+  parameterTag,
+  parameterValue,
+  parameterSide
+) {
+  const tag = parameterTag;
+
+  const methods = {
+    top() {
+      tag.style.borderTopStyle = parameterValue;
+    },
+    right() {
+      tag.style.borderRightStyle = parameterValue;
+    },
+    bottom() {
+      tag.style.borderBottomStyle = parameterValue;
+    },
+    left() {
+      tag.style.borderLeftStyle = parameterValue;
+    },
+  };
+  methods[parameterSide]();
 }
