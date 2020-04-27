@@ -98,7 +98,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 <table align="center">
     <tr align="center">
         <td>
-            <h3>Doe :heart:</h3>
+            <h3>Donate :heart:</h3>
         </td>
     </tr>
     <tr>
