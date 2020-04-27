@@ -20,17 +20,17 @@ border-radius: ${stateTop.radius}% ${stateRight.radius}% ${stateButtom.radius}% 
         <h3>CSS</h3>
         <textarea id="text-to-copy" type="text" value={value} />
         <br />
+        <button
+          onClick={() => {
+            const areaToCopy = document.getElementById("text-to-copy");
+            areaToCopy.select();
+            document.execCommand("copy");
+          }}
+          type="button"
+        >
+          Copy css to clipboard
+        </button>
       </div>
-      <button
-        onClick={() => {
-          const areaToCopy = document.getElementById("text-to-copy");
-          areaToCopy.select();
-          document.execCommand("copy");
-        }}
-        type="button"
-      >
-        Copy css to clipboard
-      </button>
     </div>
   );
 }
