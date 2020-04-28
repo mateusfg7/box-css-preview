@@ -48,3 +48,16 @@ button:hover {
 button:active {
   box-shadow: none;
 }
+
+@media (max-width: 830px) {
+  .css-area textarea {
+    min-height: 150px;
+  }
+  .css-area textarea::selection {
+    color: #000;
+    background: #fff;
+  }
+  button {
+    padding: 20px;
+  }
+}

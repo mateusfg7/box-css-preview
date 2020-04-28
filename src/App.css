@@ -10,6 +10,10 @@
   --radius: 10px;
 }
 
+* {
+  /* border: 1px red solid; */
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -30,4 +34,11 @@ body {
 
 #area {
   display: flex;
+}
+
+@media (max-width: 830px) {
+  #area {
+    display: flex;
+    flex-direction: column;
+  }
 }
