@@ -10,10 +10,6 @@
   --radius: 10px;
 }
 
-* {
-  /* border: 1px red solid; */
-}
-
 body {
   display: flex;
   justify-content: center;
